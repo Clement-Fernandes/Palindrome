@@ -5,9 +5,10 @@
 ## Makefile
 ##
 
-SRC	    =	source/check_args.c		\
+SRC	    =	source/base_to_dec.c	\
+			source/check_args.c		\
 			source/check_flags.c	\
-			source/dec_convert.c	\
+			source/dec_to_base.c	\
 			source/flag_n.c			\
 			source/helper.c			\
 			source/init_struct.c	\

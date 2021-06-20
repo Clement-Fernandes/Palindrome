@@ -44,7 +44,8 @@ int my_pow(int nb, int pow);
 int my_revnbr(int nb);
 
 int my_getdigit(int nb, int place);
-int dec_convert(int nb, int base);
+int base_to_dec(int nb, int base);
+int dec_to_base(int nb, int base);
 
 /*Principal flags*/
 int flag_n(arguments_t *args);
