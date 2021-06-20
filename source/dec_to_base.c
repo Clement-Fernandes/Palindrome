@@ -6,6 +6,7 @@
 */
 
 #include "palindrome.h"
+#include <stdio.h>
 
 static int get_higher(int nb, int base)
 {

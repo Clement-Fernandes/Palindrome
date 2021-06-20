@@ -18,6 +18,7 @@
 typedef struct arguments_s
 {
     int number;
+    int nb_base;
     int base;
     int imin;
     int imax;

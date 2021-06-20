@@ -24,7 +24,7 @@ static int flag_i(char **av, int i)
 
 static int check_options(arguments_t *args, char **av)
 {
-    for (int i = 3; av[i] != NULL; i++) {
+    for (int i = 3; av[i] != NULL; i += 2) {
         if (strcmp(av[i], "-b") == 0) {
             if (!flag_b(av, i))
                 return (false);

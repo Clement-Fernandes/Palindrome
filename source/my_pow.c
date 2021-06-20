@@ -12,6 +12,8 @@ int my_pow(int nb, int pow)
     int base = nb;
     int i = pow - 1;
 
+    if (pow == 0)
+        return (1);
     while (i != 0) {
         nb = nb * base;
         i--;
