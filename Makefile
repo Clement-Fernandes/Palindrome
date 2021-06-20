@@ -7,10 +7,12 @@
 
 SRC	    =	source/check_args.c		\
 			source/check_flags.c	\
+			source/dec_convert.c	\
 			source/flag_n.c			\
 			source/helper.c			\
 			source/init_struct.c	\
 			source/main.c			\
+			source/my_getdigit.c	\
 			source/my_intcmp.c		\
 			source/my_intlen.c		\
 			source/my_pow.c			\

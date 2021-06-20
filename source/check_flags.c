@@ -8,49 +8,60 @@
 #include "palindrome.h"
 #include "my.h"
 
-static void print_invalid(arguments_t *args, bool check)
+static int flag_b(char **av, int i)
 {
-    if (check == false) {
-        args->is_pal = true;
-        printf("invalid argument\n");
-    }
+    if (av[i + 1] != NULL && atoi(av[i + 1]) >= 1 && atoi(av[i + 1]) <= 10)
+        return (true);
+    return (false);
+}
+
+static int flag_i(char **av, int i)
+{
+    if (av[i + 1] != NULL && atoi(av[i + 1]) >= 0)
+        return (true);
+    return (false);
 }
 
 static int check_options(arguments_t *args, char **av)
 {
-    bool check = false;
-
-    for (int i = 0; av[i] != NULL; i++) {
-        if (strcmp(av[i], "-b") == 0 && av[i + 1] != NULL && atoi(av[i + 1]) >= 1 && atoi(av[i + 1]) <= 10) {
+    for (int i = 3; av[i] != NULL; i++) {
+        if (strcmp(av[i], "-b") == 0) {
+            if (!flag_b(av, i))
+                return (false);
             args->base = atoi(av[i + 1]);
-            check = true;
         }
-        if (strcmp(av[i], "-imin") == 0 && av[i + 1] != NULL && atoi(av[i + 1]) >= 0) {
+        else if (strcmp(av[i], "-imin") == 0) {
+            if (!flag_i(av, i))
+                return (false);
             args->imin = atoi(av[i + 1]);
-            check = true;
         }
-        if (strcmp(av[i], "-imax") == 0 && av[i + 1] != NULL && atoi(av[i + 1]) >= 0) {
+        else if (strcmp(av[i], "-imax") == 0) {
+            if (!flag_i(av, i))
+                return (false);
             args->imax = atoi(av[i + 1]);
-            check = true;
         }
+        else
+            return (false);
     }
-    print_invalid(args, check);
+    return (true);
+}
+
+int check_flag_n(arguments_t *args, int nb, char **av)
+{
+    if (nb <= 0) {
+        printf("invalid argument\n");
+        return (84);
+    }
+    args->number = nb;
+    if (!check_options(args, av)) {
+        printf("invalid argument\n");
+        return (84);
+    }
+    flag_n(args);
     return (0);
 }
 
-arguments_t *check_flag_n(arguments_t *args, int nb, char **av)
-{
-    if (nb <= 0)
-        printf("invalid argument\n");
-    else {
-        args->number = nb;
-        check_options(args, av);
-        flag_n(args);
-    }
-    return (args);
-}
-
-arguments_t *check_flag_p(arguments_t *args, int nb, char **av)
+int check_flag_p(arguments_t *args, int nb, char **av)
 {
     av = av;
     if (nb <= 0)
@@ -58,5 +69,5 @@ arguments_t *check_flag_p(arguments_t *args, int nb, char **av)
     else {
         args->number = nb;
     }
-    return (args);
+    return (0);
 }

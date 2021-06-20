@@ -34,14 +34,17 @@ int palindrome(char **av);
 /*Check arguments*/
 int check_helper(int ac, char **av);
 int check_args(char **av, arguments_t *args);
-arguments_t *check_flag_n(arguments_t *args, int nb, char **av);
-arguments_t *check_flag_p(arguments_t *args, int nb, char **av);
+int check_flag_n(arguments_t *args, int nb, char **av);
+int check_flag_p(arguments_t *args, int nb, char **av);
 
 /*Minilib functions*/
 int my_intcmp(int nb1, int nb2);
 int my_intlen(int nb);
 int my_pow(int nb, int pow);
 int my_revnbr(int nb);
+
+int my_getdigit(int nb, int place);
+int dec_convert(int nb, int base);
 
 /*Principal flags*/
 int flag_n(arguments_t *args);
