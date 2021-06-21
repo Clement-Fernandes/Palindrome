@@ -1,8 +1,8 @@
 /*
 ** EPITECH PROJECT, 2020
-** my_getnbr
+** Palindrome
 ** File description:
-** get nbr
+** my_getnbr
 */
 
 static int is_num(char c)

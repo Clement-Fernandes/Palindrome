@@ -1,6 +1,6 @@
 /*
 ** EPITECH PROJECT, 2021
-** my_str_isnum
+** Palindrome
 ** File description:
 ** my_str_isnum
 */

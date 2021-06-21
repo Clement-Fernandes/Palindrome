@@ -1,6 +1,6 @@
 /*
 ** EPITECH PROJECT, 2021
-** gameoflife
+** Palindrome
 ** File description:
 ** free_arr
 */

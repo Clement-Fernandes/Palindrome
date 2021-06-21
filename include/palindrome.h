@@ -1,6 +1,6 @@
 /*
 ** EPITECH PROJECT, 2021
-** B-CPE-210-PAR-2-1-redemption-jimy.xu
+** Palindrome
 ** File description:
 ** palindrome
 */
@@ -43,12 +43,13 @@ int my_intcmp(int nb1, int nb2);
 int my_intlen(int nb);
 int my_pow(int nb, int pow);
 int my_revnbr(int nb);
-
 int my_getdigit(int nb, int place);
+
+/*Base converters*/
 int base_to_dec(int nb, int base);
 int dec_to_base(int nb, int base);
 
-/*Principal flags*/
+/*Flags of the program*/
 int flag_n(arguments_t *args);
 
 #endif /* !CALENDAR_H_ */

@@ -1,6 +1,6 @@
 /*
 ** EPITECH PROJECT, 2021
-** game_of_life
+** Palindrome
 ** File description:
 ** read_file
 */

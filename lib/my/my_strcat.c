@@ -1,6 +1,6 @@
 /*
 ** EPITECH PROJECT, 2020
-** my_strcat
+** Palindrome
 ** File description:
 ** sting cat
 */

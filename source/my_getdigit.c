@@ -26,7 +26,7 @@ int my_getdigit(int nb, int place)
     int i = 0;
     int r = 0;
     int final_number = 0;
-  
+
     while (nb != 0) {
         r = nb % 10;
         arr[i] = r;

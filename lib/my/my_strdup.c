@@ -1,6 +1,6 @@
 /*
 ** EPITECH PROJECT, 2020
-** my_strdup
+** Palindrome
 ** File description:
 ** my_strdup
 */

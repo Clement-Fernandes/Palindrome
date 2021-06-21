@@ -1,6 +1,6 @@
 /*
 ** EPITECH PROJECT, 2021
-** malloc_arr.c
+** Palindrome
 ** File description:
 ** malloc_arr
 */

@@ -1,8 +1,8 @@
 /*
 ** EPITECH PROJECT, 2020
-** my_revstr
+** Palindrome
 ** File description:
-** programme
+** my_revstr
 */
 
 int my_strlen(char const *str);

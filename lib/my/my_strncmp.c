@@ -1,6 +1,6 @@
 /*
 ** EPITECH PROJECT, 2021
-** my_strncmp
+** Palindrome
 ** File description:
 ** my_strncmp
 */

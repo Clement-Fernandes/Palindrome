@@ -1,8 +1,8 @@
 /*
 ** EPITECH PROJECT, 2020
-** my_putstr.c
+** Palindrome
 ** File description:
-** put string
+** my_putstr
 */
 
 #include <unistd.h>

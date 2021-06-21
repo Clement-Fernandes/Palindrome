@@ -1,6 +1,6 @@
 /*
 ** EPITECH PROJECT, 2021
-** my_puterror
+** Palindrome
 ** File description:
 ** my_puterror
 */

@@ -1,6 +1,6 @@
 /*
 ** EPITECH PROJECT, 2021
-** display_helper
+** Palindrome
 ** File description:
 ** display_helper
 */

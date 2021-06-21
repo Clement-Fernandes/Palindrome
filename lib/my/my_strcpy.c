@@ -1,8 +1,8 @@
 /*
 ** EPITECH PROJECT, 2020
-** my_strcpy
+** Palindrome
 ** File description:
-** copy a str
+** my_strcpy
 */
 
 char *my_strcpy(char *dest, char const *src)

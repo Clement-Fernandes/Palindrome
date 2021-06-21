@@ -1,6 +1,6 @@
 /*
 ** EPITECH PROJECT, 2021
-** my_atof
+** Palindrome
 ** File description:
 ** my_atof
 */

@@ -1,13 +1,12 @@
 /*
 ** EPITECH PROJECT, 2021
-** my_defender
+** Palindrome
 ** File description:
 ** str_tab
 */
 
 #include <string.h>
 #include <stdlib.h>
-#include "calendar.h"
 
 static int get_nbr_rows(char const *str, char delim)
 {

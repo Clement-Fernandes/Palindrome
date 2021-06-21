@@ -17,7 +17,8 @@ static int check_palindrome(arguments_t *args, int res)
         printf("no solution\n");
         return (0);
     }
-    if (my_intcmp(res, rev_res) == 0 && args->iterations <= args->imax && args->iterations >= args->imin) {
+    if (my_intcmp(res, rev_res) == 0 && args->iterations <= args->imax
+    && args->iterations >= args->imin) {
         args->is_pal = true;
         res = base_to_dec(res, args->base);
         printf("%d leads to %d in ", args->number, res);

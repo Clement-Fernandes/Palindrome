@@ -1,8 +1,8 @@
 /*
 ** EPITECH PROJECT, 2020
-** my_put_nbr
+** Palindrome
 ** File description:
-** put nbr
+** my_put_nbr
 */
 
 void my_putchar(char c);

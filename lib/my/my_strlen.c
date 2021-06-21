@@ -1,6 +1,6 @@
 /*
 ** EPITECH PROJECT, 2020
-** my_strlen.c
+** Palindrome
 ** File description:
 ** str len
 */

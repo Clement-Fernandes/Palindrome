@@ -1,6 +1,6 @@
 /*
 ** EPITECH PROJECT, 2021
-** my_arrlen
+** Palindrome
 ** File description:
 ** my_arrlen
 */
