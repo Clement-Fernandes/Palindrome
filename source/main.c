@@ -12,7 +12,8 @@ int main(int ac, char **av)
     if (ac <= 1)
         return (84);
     if (check_helper(ac, av) != 1) {
-        palindrome(av);
+        if (palindrome(av) == 84)
+            return (84);
     }
     return (0);
 }

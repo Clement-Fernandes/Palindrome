@@ -15,7 +15,7 @@ static int check_palindrome(arguments_t *args, int res)
     if (args->iterations > args->imax) {
         args->is_pal = true;
         printf("no solution\n");
-        return (84);
+        return (0);
     }
     if (my_intcmp(res, rev_res) == 0 && args->iterations <= args->imax && args->iterations >= args->imin) {
         args->is_pal = true;

@@ -11,7 +11,8 @@ int palindrome(char **av)
 {
     arguments_t *args = init_struct();
 
-    check_args(av, args);
+    if (check_args(av, args) == 84)
+        return (84);
     free(args);
     return (0);
 }
