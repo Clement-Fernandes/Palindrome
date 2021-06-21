@@ -30,17 +30,18 @@ static int check_options(arguments_t *args, char **av)
                 return (false);
             args->base = atoi(av[i + 1]);
         }
-        else if (strcmp(av[i], "-imin") == 0) {
+        if (strcmp(av[i], "-imin") == 0) {
             if (!flag_i(av, i))
                 return (false);
             args->imin = atoi(av[i + 1]);
         }
-        else if (strcmp(av[i], "-imax") == 0) {
+        if (strcmp(av[i], "-imax") == 0) {
             if (!flag_i(av, i))
                 return (false);
             args->imax = atoi(av[i + 1]);
         }
-        else
+        if (strcmp(av[i], "-b") != 0 && strcmp(av[i], "-imin")
+        != 0 && strcmp(av[i], "-imax") != 0)
             return (false);
     }
     return (true);
@@ -63,11 +64,15 @@ int check_flag_n(arguments_t *args, int nb, char **av)
 
 int check_flag_p(arguments_t *args, int nb, char **av)
 {
-    av = av;
-    if (nb <= 0)
-        printf("invalid option\n");
-    else {
-        args->number = nb;
+    if (nb <= 0) {
+        printf("invalid argument\n");
+        return (84);
     }
+    args->number = nb;
+    if (!check_options(args, av)) {
+        printf("invalid argument\n");
+        return (84);
+    }
+    flag_p(args);
     return (0);
 }

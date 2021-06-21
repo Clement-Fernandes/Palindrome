@@ -19,11 +19,15 @@ typedef struct arguments_s
 {
     int number;
     int nb_base;
+    int value;
     int base;
     int imin;
     int imax;
     int iterations;
     bool is_pal;
+    bool flag_b;
+    bool flag_imin;
+    bool flag_imax;
 }arguments_t;
 
 /*Init the structure*/
@@ -51,5 +55,6 @@ int dec_to_base(int nb, int base);
 
 /*Flags of the program*/
 int flag_n(arguments_t *args);
+int flag_p(arguments_t *args);
 
 #endif /* !CALENDAR_H_ */

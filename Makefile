@@ -10,6 +10,7 @@ SRC	    =	source/base_to_dec.c	\
 			source/check_flags.c	\
 			source/dec_to_base.c	\
 			source/flag_n.c			\
+			source/flag_p.c			\
 			source/helper.c			\
 			source/init_struct.c	\
 			source/main.c			\

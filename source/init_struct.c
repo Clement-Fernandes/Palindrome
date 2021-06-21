@@ -13,10 +13,14 @@ arguments_t *init_struct(void)
 
     args->number = 0;
     args->nb_base = 0;
+    args->value = 3;
     args->base = 10;
     args->imin = 0;
     args->imax = 100;
     args->iterations = 0;
     args->is_pal = false;
+    args->flag_b = false;
+    args->flag_imin = false;
+    args->flag_imax = false;
     return (args);
 }
