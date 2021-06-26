@@ -20,21 +20,21 @@ static int get_higher(int nb, int base)
     return (0);
 }
 
-static int set_result(int *arr, int i)
+static long long set_result(int *arr, int i)
 {
-    int result = 0;
+    long long result = 0;
 
     for (i = i - 1; i != -1; i--)
         result = (result * 10) + arr[i];
     return (result);
 }
 
-int dec_to_base(int nb, int base)
+long long dec_to_base(long long nb, int base)
 {
-    int *arr = malloc(sizeof(int) * (get_higher(nb, base) + 1));
+    int *arr = malloc(sizeof(int) * (get_higher(nb, base) + 2));
     int res = nb;
     int rest = 0;
-    int result = 0;
+    long long result = 0;
     int i = 0;
 
     if (arr == NULL)

@@ -9,7 +9,7 @@
 
 int my_revnbr(int nb)
 {
-    int rev_nb = 0;
+    long long rev_nb = 0;
 
     while (nb > 0) {
         rev_nb = rev_nb * 10 + nb % 10;

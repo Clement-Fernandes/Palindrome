@@ -13,7 +13,8 @@ arguments_t *init_struct(void)
 
     args->number = 0;
     args->nb_base = 0;
-    args->value = 3;
+    args->value = 0;
+    args->palin = 1;
     args->base = 10;
     args->imin = 0;
     args->imax = 100;

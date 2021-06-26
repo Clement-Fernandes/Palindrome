@@ -33,7 +33,7 @@ static int print_helper(void)
     return (1);
 }
 
-int check_helper(int ac, char **av)
+int check_helper(int ac, char const **av)
 {
     if (ac == 2 && strcmp(av[1], "-h") == 0)
         return (print_helper());

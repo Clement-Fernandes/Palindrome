@@ -18,7 +18,8 @@
 typedef struct arguments_s
 {
     int number;
-    int nb_base;
+    long long nb_base;
+    int palin;
     int value;
     int base;
     int imin;
@@ -34,13 +35,14 @@ typedef struct arguments_s
 arguments_t *init_struct(void);
 
 /*Principal function*/
-int palindrome(char **av);
+int palindrome(char const **av);
 
 /*Check arguments*/
-int check_helper(int ac, char **av);
-int check_args(char **av, arguments_t *args);
-int check_flag_n(arguments_t *args, int nb, char **av);
-int check_flag_p(arguments_t *args, int nb, char **av);
+int check_helper(int ac, char const **av);
+int check_args(char const **av, arguments_t *args);
+int check_flag_n(arguments_t *args, int nb, char const **av);
+int check_flag_p(arguments_t *args, int nb, char const **av);
+int check_options(arguments_t *args, char const **av);
 
 /*Minilib functions*/
 int my_intcmp(int nb1, int nb2);
@@ -50,11 +52,19 @@ int my_revnbr(int nb);
 int my_getdigit(int nb, int place);
 
 /*Base converters*/
-int base_to_dec(int nb, int base);
-int dec_to_base(int nb, int base);
+int base_to_dec(long long nb, int base);
+long long dec_to_base(long long nb, int base);
 
 /*Flags of the program*/
 int flag_n(arguments_t *args);
 int flag_p(arguments_t *args);
+int flag_b(arguments_t *args, char const **av, int i);
+int flag_imin(arguments_t *args, char const **av, int i);
+int flag_imax(arguments_t *args, char const **av, int i);
+
+/*Rest*/
+int is_palindromic(arguments_t *args, int nb);
+long long add(int nb1, int nb2, int base);
+int is_digit(char const *str);
 
 #endif /* !CALENDAR_H_ */

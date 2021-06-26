@@ -7,7 +7,7 @@
 
 #include "palindrome.h"
 
-int base_to_dec(int nb, int base)
+int base_to_dec(long long nb, int base)
 {
     int len = my_intlen(nb);
     int power = 1;
